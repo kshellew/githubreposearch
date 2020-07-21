@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>search for github user repos</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>GitHub Repo Search</h1>
+    <form>
+      <label for="username">Enter GitHub Username:</label><br>
+      <input type="text" value="" name='username' id='username' required><br>
+      <input class='submit' type='submit'>
+    </form>
+    <section class= 'js-user hidden'>
+      <h2 class='show-repo'>Showing <span class='js-number'></span> Repos for: <span class='js-insert'></span></h2>
+      <p>(Will show up to 100 repos)
+    </section>
+    <section class="results hidden">
+      <div class='results-list'></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
