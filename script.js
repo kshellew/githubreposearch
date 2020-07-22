@@ -24,7 +24,7 @@ function displayResults(responseJson, user){
   //loop through responseJson and for each, display repo name and repo url and then add the result to the results section
   for (let i=0; i<responseJson.length; i++){
     //console.log('Repo Name:',responseJson[i].name);
-    //console.log('Repo URL:',responseJson[i].url)
+    //console.log('Repo URL:',responseJson[i].html_url)
     $('.results').append(
       `<div class='repo-url'><h2>Repo Name: ${responseJson[i].name}</h2>
       <li><a href="${responseJson[i].url}">Link to Repo</a></li></div>
